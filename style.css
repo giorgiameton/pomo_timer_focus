@@ -20,6 +20,9 @@ body {
   color: var(--primary-font-color);
   background-color: var(--background-color);
 }
+p {
+  margin: 0;
+}
 /*header*/
 header {
   margin: var(--white-space);
@@ -47,11 +50,14 @@ header {
 .redSection {
   background-color: #db524d;
   color: white;
+  display: grid;
+  justify-content: center;
+  margin: calc(var(--white-space) * 2);
 }
 /*timer*/
 .timerSection {
   background-color: var(--ligh-opacity);
-  margin: calc(var(--white-space) * 2);
+
   padding: var(--white-space);
   border-radius: 0.5rem;
   display: grid;
@@ -97,4 +103,19 @@ header {
   font-weight: bolder;
   width: 15em;
   justify-self: center;
+}
+
+/*working on*/
+
+.workingOn {
+  padding: var(--white-space);
+  display: grid;
+  justify-content: center;
+  row-gap: calc(var(--white-space) / 2);
+}
+
+.smaller {
+  font-size: 0.7rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
 }
