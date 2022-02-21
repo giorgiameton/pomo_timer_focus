@@ -121,7 +121,16 @@ header button:active {
   width: 15em;
   justify-self: center;
 }
-
+.timerSection button:hover {
+  transform: scale(1.1);
+  transition: all ease 0.7s;
+}
+.timerSection button:active {
+  transition: none;
+  transform: translateY(5%) scale(1.1);
+  background-color: #f5f5f5;
+  border-bottom: solid var(--secondary-color) 0.3rem;
+}
 /*working on*/
 
 .workingOn {
@@ -217,6 +226,14 @@ header button:active {
   max-width: 6%;
 }
 
+.task:hover {
+  transform: scale(1.1);
+  transition: all ease 0.7s;
+}
+.newTask:hover {
+  background-color: var(--ligh-opacity);
+  transition: all ease 0.7s;
+}
 .report {
   display: flex;
   justify-content: center;
