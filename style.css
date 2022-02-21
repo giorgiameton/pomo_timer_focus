@@ -119,3 +119,27 @@ header {
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
 }
+
+/*tasks*/
+.tasks {
+  display: grid;
+}
+
+.taskTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid var(--secondary-color) 0.1rem;
+}
+.settings {
+  width: 10%;
+  background-color: var(--ligh-opacity);
+  aspect-ratio: 1/1;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.settings img {
+  max-height: 60%;
+}
