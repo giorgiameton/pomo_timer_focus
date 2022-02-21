@@ -39,14 +39,24 @@ header {
   display: flex;
   gap: 0.5rem;
 }
-.headerButtons button {
+header button {
   border: none;
   padding: 0.5rem;
   background-color: var(--ligh-opacity);
   color: white;
   border-radius: 0.3rem;
 }
-
+header button:hover {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  transition: all ease 0.7s;
+}
+header button:active {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  border: solid var(--secondary-color) 0.1rem;
+  transition: all ease 0.7s;
+}
 /*Red section*/
 .redSection {
   background-color: #db524d;
@@ -84,7 +94,7 @@ header {
 .timerSection li:hover {
   background-color: var(--dark-opacity);
   border-radius: 0.3rem;
-  transition: all 1s;
+  transition: all ease 0.7s;
 }
 
 .timer {
