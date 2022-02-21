@@ -4,8 +4,10 @@
 /*variables*/
 
 :root {
-  --background-color: white;
-  --primary-color: #db524d;
+  --background-color: #db524d;
+  --secondary-color: white;
+  --ligh-opacity: rgba(255, 255, 255, 0.15);
+  --dark-opacity: rgba(65, 64, 66, 0.25);
 
   --font: Proxima Soft, sans-serif;
   --primary-font-color: #414042;
@@ -16,14 +18,15 @@ body {
   font-family: var(--font);
   font-size: 1rem;
   color: var(--primary-font-color);
+  background-color: var(--background-color);
 }
 /*header*/
 header {
-  background-color: var(--primary-color);
-  padding: var(--white-space);
+  margin: var(--white-space);
+  padding-bottom: var(--white-space);
   display: flex;
   justify-content: space-between;
-  border-bottom: solid var(--primary-font-color) 0.1rem;
+  border-bottom: solid var(--dark-opacity) 0.1rem;
 }
 .logo {
   max-width: 30%;
@@ -35,7 +38,63 @@ header {
 .headerButtons button {
   border: none;
   padding: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: var(--ligh-opacity);
   color: white;
   border-radius: 0.3rem;
+}
+
+/*Red section*/
+.redSection {
+  background-color: #db524d;
+  color: white;
+}
+/*timer*/
+.timerSection {
+  background-color: var(--ligh-opacity);
+  margin: calc(var(--white-space) * 2);
+  padding: var(--white-space);
+  border-radius: 0.5rem;
+  display: grid;
+  justify-content: center;
+  row-gap: calc(var(--white-space) * 2);
+}
+.timerSection ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: calc(var(--white-space) / 2);
+}
+.timerSection li {
+  color: white;
+  padding: calc(var(--white-space) / 2);
+}
+.selected {
+  background-color: var(--dark-opacity);
+  border-radius: 0.3rem;
+}
+.timerSection li:hover {
+  background-color: var(--dark-opacity);
+  border-radius: 0.3rem;
+  transition: all 1s;
+}
+
+.timer {
+  font-size: 7rem;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.timerSection button {
+  border: none;
+  border-bottom: solid var(--dark-opacity) 0.3rem;
+  padding: var(--white-space);
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  border-radius: 0.3rem;
+  font-weight: bolder;
+  width: 15em;
+  justify-self: center;
 }
