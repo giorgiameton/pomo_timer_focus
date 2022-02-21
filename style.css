@@ -1,0 +1,14 @@
+/*importing fonts*/
+@import url("https://use.typekit.net/nry2kba.css");
+
+/*variables*/
+
+:root {
+  --background-color: white;
+  --primary-color: #db524d;
+
+  --head-font: New Atten Round, sans-serif;
+  --text-font: Proxima Soft, sans-serif;
+
+  --white-space: 2rem;
+}
