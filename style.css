@@ -7,7 +7,7 @@
   --background-color: #db524d;
   --secondary-color: white;
   --ligh-opacity: rgba(255, 255, 255, 0.15);
-  --dark-opacity: rgba(65, 64, 66, 0.25);
+  --dark-opacity: rgba(65, 64, 66, 0.15);
 
   --font: Proxima Soft, sans-serif;
   --primary-font-color: #414042;
@@ -148,6 +148,7 @@ header {
 
 .task {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   background-color: var(--secondary-color);
@@ -163,8 +164,40 @@ header {
   width: 15%;
   aspect-ratio: 1/1;
   border-radius: 0.3rem;
-  border-color: solid var(--primary-font-color);
+  border-color: solid var(--primary-font-color) 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.gray {
+  color: #d1d3d4;
+}
+.bigger {
+  font-size: larger;
+}
+.strike {
+  text-decoration: line-through;
+}
+.uncomplete {
+  border-left: solid var(--primary-font-color) 0.3rem;
+}
+.complete {
+  border-left: solid var(--secondary-color) 0.3rem;
+}
+
+.newTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--white-space) / 2);
+
+  background-color: var(--dark-opacity);
+  padding: var(--white-space);
+  border-radius: 0.3rem;
+  border: dashed var(--ligh-opacity) 0.2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.newTask img {
+  max-width: 6%;
 }
