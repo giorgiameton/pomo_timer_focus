@@ -7,8 +7,35 @@
   --background-color: white;
   --primary-color: #db524d;
 
-  --head-font: New Atten Round, sans-serif;
-  --text-font: Proxima Soft, sans-serif;
-
-  --white-space: 2rem;
+  --font: Proxima Soft, sans-serif;
+  --primary-font-color: #414042;
+  --white-space: 1rem;
+}
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 1rem;
+  color: var(--primary-font-color);
+}
+/*header*/
+header {
+  background-color: var(--primary-color);
+  padding: var(--white-space);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid var(--primary-font-color) 0.1rem;
+}
+.logo {
+  max-width: 30%;
+}
+.headerButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+.headerButtons button {
+  border: none;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  border-radius: 0.3rem;
 }
