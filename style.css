@@ -23,6 +23,7 @@ body {
 p {
   margin: 0;
 }
+
 /*header*/
 header {
   margin: var(--white-space);
@@ -123,6 +124,7 @@ header {
 /*tasks*/
 .tasks {
   display: grid;
+  row-gap: calc(var(--white-space) / 2);
 }
 
 .taskTitle {
@@ -142,4 +144,27 @@ header {
 }
 .settings img {
   max-height: 60%;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-font-color);
+  border-radius: 0.3rem;
+  padding: calc(var(--white-space) / 2);
+}
+.task img {
+  max-width: 10%;
+}
+
+.settNegative {
+  width: 15%;
+  aspect-ratio: 1/1;
+  border-radius: 0.3rem;
+  border-color: solid var(--primary-font-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
