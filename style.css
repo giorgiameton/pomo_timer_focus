@@ -52,6 +52,7 @@ header {
   background-color: #db524d;
   color: white;
   display: grid;
+  row-gap: calc(var(--white-space) * 2);
   justify-content: center;
   margin: calc(var(--white-space) * 2);
 }
@@ -59,7 +60,7 @@ header {
 .timerSection {
   background-color: var(--ligh-opacity);
 
-  padding: var(--white-space);
+  padding: var(--white-space) calc(var(--white-space) * 3);
   border-radius: 0.5rem;
   display: grid;
   justify-content: center;
@@ -109,7 +110,6 @@ header {
 /*working on*/
 
 .workingOn {
-  padding: var(--white-space);
   display: grid;
   justify-content: center;
   row-gap: calc(var(--white-space) / 2);
@@ -200,4 +200,14 @@ header {
 }
 .newTask img {
   max-width: 6%;
+}
+
+.report {
+  display: flex;
+  justify-content: center;
+  gap: var(--white-space);
+  padding: var(--white-space);
+
+  background-color: var(--ligh-opacity);
+  border-top: solid var(--ligh-opacity) 0.1rem;
 }
