@@ -58,6 +58,7 @@ header button:active {
   border: solid var(--secondary-color) 0.1rem;
   transition: all ease 0.7s;
 }
+
 /*Red section*/
 .redSection {
   background-color: #db524d;
@@ -337,7 +338,7 @@ footer a:hover {
 @media only screen and (min-width: 600px) {
   header,
   .redSection {
-    margin: 0 10vw 0 10vw;
+    margin: var(--white-space) 10vw;
   }
   .whiteSection {
     padding: var(--white-space) 10vw;
@@ -346,7 +347,7 @@ footer a:hover {
 @media only screen and (min-width: 900px) {
   header,
   .redSection {
-    margin: 0 30vw 0 30vw;
+    margin: var(--white-space) 30vw;
   }
   .whiteSection {
     padding: var(--white-space) 30vw;
