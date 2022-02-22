@@ -121,6 +121,7 @@ header button:active {
   font-weight: bolder;
   width: 15em;
   justify-self: center;
+  cursor: pointer;
 }
 .timerSection button:hover {
   transform: scale(1.1);
@@ -169,6 +170,15 @@ header button:active {
 }
 .settings img {
   max-height: 60%;
+}
+.settings:hover {
+  transition: all ease 0.2s;
+  transform: scale(1.1);
+}
+.settings:active {
+  cursor: pointer;
+  background-color: var(--background-color);
+  border: solid var(--secondary-color) 0.1rem;
 }
 
 .task {
@@ -230,10 +240,12 @@ header button:active {
 .task:hover {
   transform: scale(1.1);
   transition: all ease 0.7s;
+  cursor: pointer;
 }
 .newTask:hover {
   background-color: var(--ligh-opacity);
   transition: all ease 0.7s;
+  cursor: pointer;
 }
 .report {
   display: flex;
