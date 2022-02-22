@@ -65,7 +65,7 @@ header button:active {
   display: grid;
   row-gap: calc(var(--white-space) * 2);
   justify-content: center;
-  margin: calc(var(--white-space) * 2);
+  padding: calc(var(--white-space) * 2);
 }
 /*timer*/
 .timerSection {
@@ -244,14 +244,70 @@ header button:active {
   border-top: solid var(--ligh-opacity) 0.1rem;
 }
 
+/*WHITE SECTION*/
+.whiteSection {
+  background-color: var(--secondary-color);
+  padding: calc(var(--white-space) * 2);
+}
+.whiteSection section {
+  padding: var(--white-space) 0;
+}
+.whiteSection h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: calc(var(--white-space) * 2) 0;
+}
+.whiteSection h2 {
+  margin: 0;
+  padding: calc(var(--white-space) / 2) 0;
+}
+
+/*short border under h2*/
+.whiteSection h2::after {
+  content: "";
+  display: block;
+  width: 1rem;
+  padding: calc(var(--white-space) / 2);
+  border-bottom: solid var(--background-color) 0.2rem;
+}
+.whiteSection p {
+  padding: var(--white-space) 0;
+  line-height: 1.3rem;
+}
+.whiteSection strong {
+  color: var(--background-color);
+}
+.whiteSection li {
+  font-size: 0.9rem;
+  padding: calc(var(--white-space) / 2) 0;
+}
+.whiteSection ul {
+  list-style: none;
+}
+/*changing bulltes dots color by creating a before element*/
+.whiteSection ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--background-color); /* Change the color */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: var(--white-space); /* Also needed for space (tweak if needed) */
+  margin-left: -1rem; /* Also needed for space (tweak if needed) */
+}
 /*computer screen*/
 @media only screen and (min-width: 600px) {
-  body {
+  header,
+  .redSection {
     margin: 0 10vw 0 10vw;
+  }
+  .whiteSection {
+    padding: var(--white-space) 10vw;
   }
 }
 @media only screen and (min-width: 900px) {
-  body {
+  header,
+  .redSection {
     margin: 0 30vw 0 30vw;
+  }
+  .whiteSection {
+    padding: var(--white-space) 30vw;
   }
 }
