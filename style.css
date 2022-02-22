@@ -274,7 +274,7 @@ header button:active {
   padding: var(--white-space) 0;
   line-height: 1.3rem;
 }
-.whiteSection strong {
+strong {
   color: var(--background-color);
 }
 .whiteSection li {
@@ -291,6 +291,47 @@ header button:active {
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: var(--white-space); /* Also needed for space (tweak if needed) */
   margin-left: -1rem; /* Also needed for space (tweak if needed) */
+}
+
+/*footer*/
+footer {
+  border-top: solid var(--dark-opacity) 0.1rem;
+  background-color: var(--secondary-color);
+  margin: 0;
+  padding: var(--white-space) calc(var(--white-space) * 3);
+  display: grid;
+  row-gap: var(--white-space);
+  justify-items: center;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: calc(var(--white-space) / 2);
+}
+footer a {
+  text-decoration: none;
+  color: var(--primary-font-color);
+  font-size: 0.9rem;
+}
+footer a:hover {
+  color: var(--background-color);
+  cursor: pointer;
+}
+.SoMe {
+  display: flex;
+  justify-content: center;
+  gap: var(--white-space);
+}
+.SoMe img {
+  max-width: 100%;
+}
+.SoMe img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all ease 0.7s;
 }
 /*computer screen*/
 @media only screen and (min-width: 600px) {
